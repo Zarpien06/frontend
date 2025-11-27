@@ -2,53 +2,49 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>EduMultiPro - Frontend</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: #f0f4f8;
-      text-align: center;
-      border-radius: 10px;
-    }
-    h1 {
-      color: #0077cc;
-    }
-    button {
-      margin: 0.5rem;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      background-color: #0077cc;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background-color: #005fa3;
-    }
-    #respuesta {
-      margin-top: 20px;
-      font-weight: bold;
-      min-height: 1.5em;
-      white-space: pre-wrap;
-      text-align: left;
-    }
-  </style>
+  <title>EduMultiPro Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>EduMultiPro - Frontend</h1>
+  <div class="container">
+    <header>
+      <h1>EduMultiPro Dashboard</h1>
+      <p class="subtitle">Visualiza información y usuarios de la plataforma EduMultiPro</p>
+    </header>
 
-  <button id="btnRaiz">Bienvenida</button>
-  <button id="btnStatus">Estado API</button>
-  <button id="btnInfo">Info EduMultiPro</button>
-  <button id="btnUsers">Usuarios</button>
+    <section class="info-panel">
+      <h2>Sobre EduMultiPro</h2>
+      <p>EduMultiPro es la plataforma educativa integral para gestionar cursos, estudiantes y contenido de manera profesional. Nuestra misión es impulsar el aprendizaje con herramientas modernas y seguras.</p>
+      <ul>
+        <li>✅ Gestión de cursos y usuarios</li>
+        <li>✅ Reportes en tiempo real</li>
+        <li>✅ Conexión directa con APIs seguras</li>
+      </ul>
+    </section>
 
-  <p id="respuesta"></p>
+    <section class="buttons-panel">
+      <button class="btn" id="btnRaiz">Bienvenida</button>
+      <button class="btn" id="btnStatus">Estado API</button>
+      <button class="btn" id="btnInfo">Info EduMultiPro</button>
+      <button class="btn" id="btnUsers">Usuarios</button>
+    </section>
+
+    <section id="respuesta"></section>
+
+    <section class="tips-panel">
+      <h2>Tips & Noticias</h2>
+      <div class="card">🎓 Nuevo curso de JavaScript avanzado disponible esta semana.</div>
+      <div class="card">🛡️ Revisa tu perfil y mantén tus credenciales seguras.</div>
+      <div class="card">📊 Estadísticas de tus cursos actualizadas automáticamente.</div>
+    </section>
+
+    <footer>
+      <p>© 2025 EduMultiPro - Todos los derechos reservados</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
