@@ -2,11 +2,51 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Frontend conectado</title>
+  <title>EduMultiPro - Frontend</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #f0f4f8;
+      text-align: center;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #0077cc;
+    }
+    button {
+      margin: 0.5rem;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #0077cc;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    #respuesta {
+      margin-top: 20px;
+      font-weight: bold;
+      min-height: 1.5em;
+      white-space: pre-wrap;
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
-  <h1>Frontend conectado a Render</h1>
-  <button onclick="consultarAPI()">Consultar API</button>
+  <h1>EduMultiPro - Frontend</h1>
+
+  <button id="btnRaiz">Bienvenida</button>
+  <button id="btnStatus">Estado API</button>
+  <button id="btnInfo">Info EduMultiPro</button>
+  <button id="btnUsers">Usuarios</button>
+
   <p id="respuesta"></p>
 
   <script src="script.js"></script>
